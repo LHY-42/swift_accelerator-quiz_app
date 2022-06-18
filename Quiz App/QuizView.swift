@@ -38,7 +38,7 @@ struct QuizView: View {
                                 Text(Questions[questionIndex].option1)
                                     .padding()
                                     .frame(maxWidth: .infinity)
-                                    .background(.blue)
+                                    .background(.red)
                                     .foregroundColor(.white)
                                     .cornerRadius(10)
                             }
@@ -55,7 +55,7 @@ struct QuizView: View {
                                 Text(Questions[questionIndex].option2)
                                     .padding()
                                     .frame(maxWidth: .infinity)
-                                    .background(.blue)
+                                    .background(.green)
                                     .foregroundColor(.white)
                                     .cornerRadius(10)
                             }
@@ -89,7 +89,7 @@ struct QuizView: View {
                                     Text(Questions[questionIndex].option4)
                                         .padding()
                                         .frame(maxWidth: .infinity)
-                                        .background(.blue)
+                                        .background(.yellow)
                                         .foregroundColor(.white)
                                         .cornerRadius(10)
                                 }
