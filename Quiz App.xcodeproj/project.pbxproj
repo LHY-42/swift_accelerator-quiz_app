@@ -12,7 +12,7 @@
 		CDA85CF22859A9710021055F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA85CF12859A9710021055F /* Assets.xcassets */; };
 		CDA85CF52859A9710021055F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA85CF42859A9710021055F /* Preview Assets.xcassets */; };
 		CDA85CFC2859AE240021055F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA85CFB2859AE240021055F /* Data.swift */; };
-		CDA85CFE2859B2D30021055F /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA85CFD2859B2D30021055F /* QuizView.swift */; };
+		CDA85CFE2859B2D30021055F /* TestQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA85CFD2859B2D30021055F /* TestQuiz.swift */; };
 		CDA85D002859C3540021055F /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA85CFF2859C3540021055F /* SheetView.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +23,7 @@
 		CDA85CF12859A9710021055F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDA85CF42859A9710021055F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDA85CFB2859AE240021055F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		CDA85CFD2859B2D30021055F /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		CDA85CFD2859B2D30021055F /* TestQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuiz.swift; sourceTree = "<group>"; };
 		CDA85CFF2859C3540021055F /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +60,7 @@
 				CDA85CED2859A9700021055F /* Quiz_AppApp.swift */,
 				CDA85CFF2859C3540021055F /* SheetView.swift */,
 				CDA85CEF2859A9700021055F /* ContentView.swift */,
-				CDA85CFD2859B2D30021055F /* QuizView.swift */,
+				CDA85CFD2859B2D30021055F /* TestQuiz.swift */,
 				CDA85CFB2859AE240021055F /* Data.swift */,
 				CDA85CF12859A9710021055F /* Assets.xcassets */,
 				CDA85CF32859A9710021055F /* Preview Content */,
@@ -147,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDA85CF02859A9700021055F /* ContentView.swift in Sources */,
-				CDA85CFE2859B2D30021055F /* QuizView.swift in Sources */,
+				CDA85CFE2859B2D30021055F /* TestQuiz.swift in Sources */,
 				CDA85D002859C3540021055F /* SheetView.swift in Sources */,
 				CDA85CFC2859AE240021055F /* Data.swift in Sources */,
 				CDA85CEE2859A9700021055F /* Quiz_AppApp.swift in Sources */,

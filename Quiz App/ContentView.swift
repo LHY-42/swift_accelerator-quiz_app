@@ -13,8 +13,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: QuizView()) {
-                    Image(systemName: "play")
+                NavigationLink(destination: TestQuizView()) {
+                    Text("Test Quiz \(Image(systemName: "play"))")
                         .padding()
                         .foregroundColor(.white)
                         .background(.green)

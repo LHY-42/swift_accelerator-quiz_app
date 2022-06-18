@@ -16,7 +16,7 @@ struct Question {
     var correctAns: Int
 }
 
-var Questions = [
+var TestQuizQuestions = [
     Question(title: "When was Nutella invented?", option1: "1496", option2: "1964", option3: "2005", option4: "2003", correctAns: 2),
     Question(title: "What is Rick Astley's birth year?", option1: "1967", option2: "1956", option3: "1969", option4: "1966", correctAns: 4),
     Question(title: "When was Objective C created?", option1: "1987", option2: "2001", option3: "1984", option4: "1989", correctAns: 3),

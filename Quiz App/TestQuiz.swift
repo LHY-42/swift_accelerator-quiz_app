@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QuizView: View {
+struct TestQuizView: View {
     @State var questionIndex = 0
     @State var isAlertShown = false
     @State var alertMessage = ""
@@ -17,7 +17,7 @@ struct QuizView: View {
             ZStack {
                 Color(.systemBackground)
                 VStack(alignment: .leading) {
-                    Text(Questions[questionIndex].title)
+                    Text(TestQuizQuestions[questionIndex].title)
                         .padding()
                         .font(.largeTitle)
                         .foregroundColor(.white)
@@ -26,7 +26,7 @@ struct QuizView: View {
                     VStack(alignment: .leading) {
                         HStack{
                             Button {
-                                if Questions[questionIndex].correctAns == 1{
+                                if TestQuizQuestions[questionIndex].correctAns == 1{
                                     alertMessage = "Correct."
                                     isAlertShown = true
                                     pointsCount += 1
@@ -35,7 +35,7 @@ struct QuizView: View {
                                     isAlertShown = true
                                 }
                             } label: {
-                                Text(Questions[questionIndex].option1)
+                                Text(TestQuizQuestions[questionIndex].option1)
                                     .padding()
                                     .frame(maxWidth: .infinity)
                                     .background(.red)
@@ -43,7 +43,7 @@ struct QuizView: View {
                                     .cornerRadius(10)
                             }
                             Button {
-                                if Questions[questionIndex].correctAns == 2{
+                                if TestQuizQuestions[questionIndex].correctAns == 2{
                                     alertMessage = "Correct."
                                     isAlertShown = true
                                     pointsCount += 1
@@ -52,7 +52,7 @@ struct QuizView: View {
                                     isAlertShown = true
                                 }
                             } label: {
-                                Text(Questions[questionIndex].option2)
+                                Text(TestQuizQuestions[questionIndex].option2)
                                     .padding()
                                     .frame(maxWidth: .infinity)
                                     .background(.green)
@@ -62,7 +62,7 @@ struct QuizView: View {
                         }
                         HStack{
                             Button {
-                                if Questions[questionIndex].correctAns == 3{
+                                if TestQuizQuestions[questionIndex].correctAns == 3{
                                     alertMessage = "Correct."
                                     isAlertShown = true
                                     pointsCount += 1
@@ -70,7 +70,7 @@ struct QuizView: View {
                                     alertMessage = "Incorrect."
                                     isAlertShown = true
                                 }                        } label: {
-                                    Text(Questions[questionIndex].option3)
+                                    Text(TestQuizQuestions[questionIndex].option3)
                                         .padding()
                                         .frame(maxWidth: .infinity)
                                         .background(.blue)
@@ -78,7 +78,7 @@ struct QuizView: View {
                                         .cornerRadius(10)
                                 }
                             Button {
-                                if Questions[questionIndex].correctAns == 4 {
+                                if TestQuizQuestions[questionIndex].correctAns == 4 {
                                     alertMessage = "Correct."
                                     isAlertShown = true
                                     pointsCount += 1
@@ -86,7 +86,7 @@ struct QuizView: View {
                                     alertMessage = "Incorrect."
                                     isAlertShown = true
                                 }                        } label: {
-                                    Text(Questions[questionIndex].option4)
+                                    Text(TestQuizQuestions[questionIndex].option4)
                                         .padding()
                                         .frame(maxWidth: .infinity)
                                         .background(.yellow)
@@ -124,6 +124,6 @@ struct QuizView: View {
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizView()
+        TestQuizView()
     }
 }
