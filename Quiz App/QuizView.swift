@@ -114,13 +114,13 @@ struct QuizView: View {
                     Text("Next Question")
                 }
             }
-            
-            .sheet(isPresented:$showSheet, onDismiss: View ContentView()){
+        }
+        .sheet(isPresented:$showSheet){
                 SheetView()
             }
         }
     }
-}
+
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
