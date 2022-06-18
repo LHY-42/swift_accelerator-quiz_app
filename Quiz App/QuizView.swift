@@ -24,72 +24,77 @@ struct QuizView: View {
                         .background(.green)
                         .cornerRadius(10)
                     VStack(alignment: .leading) {
-                        Button {
-                            if Questions[questionIndex].correctAns == 1{
-                                alertMessage = "Correct."
-                                isAlertShown = true
-                                pointsCount += 1
-                            } else {
-                                alertMessage = "Incorrect."
-                                isAlertShown = true
-                            }
-                        } label: {
-                            Text(Questions[questionIndex].option1)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                        }
-                        Button {
-                            if Questions[questionIndex].correctAns == 2{
-                                alertMessage = "Correct."
-                                isAlertShown = true
-                                pointsCount += 1
-                            } else {
-                                alertMessage = "Incorrect."
-                                isAlertShown = true
-                            }
-                        } label: {
-                            Text(Questions[questionIndex].option2)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                        }
-                        Button {
-                            if Questions[questionIndex].correctAns == 3{
-                                alertMessage = "Correct."
-                                isAlertShown = true
-                                pointsCount += 1
-                            } else {
-                                alertMessage = "Incorrect."
-                                isAlertShown = true
-                            }                        } label: {
-                                Text(Questions[questionIndex].option3)
+                        HStack{
+                            Button {
+                                if Questions[questionIndex].correctAns == 1{
+                                    alertMessage = "Correct."
+                                    isAlertShown = true
+                                    pointsCount += 1
+                                } else {
+                                    alertMessage = "Incorrect."
+                                    isAlertShown = true
+                                }
+                            } label: {
+                                Text(Questions[questionIndex].option1)
                                     .padding()
                                     .frame(maxWidth: .infinity)
                                     .background(.blue)
                                     .foregroundColor(.white)
                                     .cornerRadius(10)
                             }
-                        Button {
-                            if Questions[questionIndex].correctAns == 4 {
-                                alertMessage = "Correct."
-                                isAlertShown = true
-                                pointsCount += 1
-                            } else {
-                                alertMessage = "Incorrect."
-                                isAlertShown = true
-                            }                        } label: {
-                                Text(Questions[questionIndex].option4)
+                            Button {
+                                if Questions[questionIndex].correctAns == 2{
+                                    alertMessage = "Correct."
+                                    isAlertShown = true
+                                    pointsCount += 1
+                                } else {
+                                    alertMessage = "Incorrect."
+                                    isAlertShown = true
+                                }
+                            } label: {
+                                Text(Questions[questionIndex].option2)
                                     .padding()
                                     .frame(maxWidth: .infinity)
                                     .background(.blue)
                                     .foregroundColor(.white)
                                     .cornerRadius(10)
                             }
+                        }
+                        HStack{
+                            Button {
+                                if Questions[questionIndex].correctAns == 3{
+                                    alertMessage = "Correct."
+                                    isAlertShown = true
+                                    pointsCount += 1
+                                } else {
+                                    alertMessage = "Incorrect."
+                                    isAlertShown = true
+                                }                        } label: {
+                                    Text(Questions[questionIndex].option3)
+                                        .padding()
+                                        .frame(maxWidth: .infinity)
+                                        .background(.blue)
+                                        .foregroundColor(.white)
+                                        .cornerRadius(10)
+                                }
+                            Button {
+                                if Questions[questionIndex].correctAns == 4 {
+                                    alertMessage = "Correct."
+                                    isAlertShown = true
+                                    pointsCount += 1
+                                } else {
+                                    alertMessage = "Incorrect."
+                                    isAlertShown = true
+                                }                        } label: {
+                                    Text(Questions[questionIndex].option4)
+                                        .padding()
+                                        .frame(maxWidth: .infinity)
+                                        .background(.blue)
+                                        .foregroundColor(.white)
+                                        .cornerRadius(10)
+                                }
+                        }
+                        
                     }
                     Spacer()
                 }
